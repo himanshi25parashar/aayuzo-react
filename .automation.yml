@@ -1,0 +1,7 @@
+deploy:
+  tasks:
+    - export NVM_DIR=~/.nvm
+    - source ~/.nvm/nvm.sh
+    - npm install
+    - npm run build
+    - cp -r build/* ../
